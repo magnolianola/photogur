@@ -1,0 +1,41 @@
+<h1>Add a picture</h1>
+<%= link_to "Back to Pictures", pictures_url %>
+<%= form_for @picture do |f| %>
+  <p>
+    <%= f.label "artist" %><br>
+    <%= f.text_field "artist" %>
+  </p>
+  <p>
+    <%= f.label "title" %><br>
+    <%= f.text_field "title" %>
+  </p>
+  <p>
+    <%= f.label "url" %><br>
+    <%= f.text_field "url" %>
+  </p>
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>
+
+
+
+
+<!-- <h1>Add a picture</h1>
+<form action="/pictures" method="POST">
+	<p>
+		<label>Artist</label></br>
+		<input type="text" name="artist"/>
+	</p>
+	<p>
+		<label>Title</label><br>
+		<input type="text" name="title"/>
+	</p>
+	<p>
+		<label>URL</label><br>
+		<input type="text" name="url"/>
+	</p>
+	<p>
+		<input type="submit"/>
+	</p>
+</form> -->
