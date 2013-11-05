@@ -1,0 +1,40 @@
+h1 {
+	color:Khaki;
+	background-color:Black;
+	}
+
+h2 {
+	color:Khaki;
+	font-size:70%;
+}
+
+p {
+	color:Khaki;
+	font-weight:bold;
+	}
+
+body {
+	background-color:DarkSlateGray;
+	text-align:center;
+	font-family:Verdana;
+	}
+a {
+	text-decoration: none !important;
+	color:HotPink;
+}
+
+
+
+	/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
