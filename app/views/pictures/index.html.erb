@@ -2,6 +2,13 @@
 <h2>Welcome! Here you can add, edit, and delete photos at your leisure. Enjoy your stay.</h2>
 <%= link_to "[New Picture]", "/pictures/new" %>
 
+<h2>Pictures in Alphabetical order</h2>
+<ul>
+	<% @pictures.each do |picture| %>
+		<li><%= picture.title %></li>
+<% end %>
+</ul>
+
 <% @pictures.each do |picture| %>
 	<p><%= picture[:title] %>, <%= picture[:artist] %></p>
 	<img src="<%= picture[:url] %>"><br>

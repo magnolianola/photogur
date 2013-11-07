@@ -1,0 +1,8 @@
+	<h1>Comments</h1>
+<%= link_to "[Back to All Pictures]", @picture %>
+<%= link_to "/pictures/#{@picture.id}" %>
+
+<% @comments.each do |comment| %>
+	<p><%= comment.name %>: <%= comment.content %></p>
+<% end %>
+

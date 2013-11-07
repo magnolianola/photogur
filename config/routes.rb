@@ -1,4 +1,5 @@
 Photogur::Application.routes.draw do
+  get "new_comment/show"
   # post 'pictures' => "pictures#create"
 
   # get 'pictures' => 'pictures#index'
@@ -8,6 +9,11 @@ Photogur::Application.routes.draw do
 
   resources :pictures
   root :to => "pictures#index"
+
+  get 'pictures/:picture_id/comments' => 'comments#index', :as => 'comments'
+  get 'pictures/:picture_id/comments/new' => 'comments#new', :as => 'new_comment'
+  post 'pictures/:picture_id/comments/' => 'comments#create'
+
   # get 'pictures' => 'pictures#index'
 
   # post 'pictures' => "pictures#create"

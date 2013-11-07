@@ -1,0 +1,22 @@
+<h1>Post a Comment</h1>
+		 <p>
+		 	<%= link_to "[Back to Picture]", picture_path(@picture) %>
+		 </p>
+		
+		<%= form_for @comment do |f| %>
+			<p>
+				<%= f.label "Your Name" %><br>
+				<%= f.text_field "name" %>
+			</p>
+			<p>
+				<%= f.label "Your Comment" %><br>
+				<%= f.text_field "content" %><br>
+			</p>
+			<p>
+				<%= submit_tag "Save" %>
+			</p>
+		<% end %>
+		
+
+
+
